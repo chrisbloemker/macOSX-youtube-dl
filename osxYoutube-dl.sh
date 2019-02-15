@@ -7,7 +7,8 @@ brew install ffmpeg
 touch /etc/youtube-dl.conf
 echo "-o ~/Downloads/audio/%(title)s.%(ext)s" >> /etc/youtube-dl.conf
 echo "line 2" >> /etc/youtube-dl.conf
-alias rip='youtube-dl -f 140'
-echo "Thanks for using chrisbloemker'r bash script!"
+echo "alias rip='youtube-dl -f 140'" >> ~/.bashrc
+#alias rip='youtube-dl -f 140'
+echo "Thanks for using chrisbloemker's bash script!"
 echo "To use this tool to rip audio, type in a terminal shell, 'rip <youtube-url-goes-here>'"
 echo "Your audio downloads will be located in your '~/Downloads/audio' folder"
